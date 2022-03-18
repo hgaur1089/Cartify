@@ -71,7 +71,7 @@ class CartItem extends React.Component {
             <img
               alt="delete"
               className="action-icons"
-              src="https://cdn-icons.flaticon.com/png/512/484/premium/484662.png?token=exp=1647531218~hmac=e5627ef7ee30c2acba48847a55340a1b"
+              src="https://cdn-icons.flaticon.com/png/512/3405/premium/3405244.png?token=exp=1647595139~hmac=ad0ae6343f2194cf9f26284ed0fb977b"
             />
           </div>
         </div>
