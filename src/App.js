@@ -36,7 +36,7 @@ class App extends React.Component {
   componentDidMount() {
     console.log('l');
     firebase
-      .firestore
+      .firestore()
       .collection('products')
       .get()
       .then((snapshot) => {
