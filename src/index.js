@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as firebase from 'firebase';
+import firebase from "firebase";
 import 'firebase/firestore';
 import { initializeApp } from  "firebase/app";
 
@@ -19,6 +19,10 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}else {
+  firebase.app(); // if already initialized, use that one
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));
