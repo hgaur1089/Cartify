@@ -35,13 +35,13 @@ class App extends React.Component {
 
   componentDidMount() {
     console.log('l');
-    // firebase
-    //   .firestore
-    //   .collection('products')
-    //   .get()
-    //   .then((snapshot) => {
-    //     console.log(snapshot);
-    //   })
+    firebase
+      .firestore
+      .collection('products')
+      .get()
+      .then((snapshot) => {
+        console.log(snapshot);
+      })
   }
 
   handleIncreaseQuantity = (product) => {
