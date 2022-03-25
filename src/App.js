@@ -1,6 +1,7 @@
 import React from 'react';
 import Cart from './Cart';
 import Navbar from './Navbar';
+import * as firebase from 'firebase';
 
 class App extends React.Component {
   constructor() {
@@ -30,6 +31,17 @@ class App extends React.Component {
         },
       ],
     };
+  }
+
+  componentDidMount() {
+    console.log('l');
+    // firebase
+    //   .firestore
+    //   .collection('products')
+    //   .get()
+    //   .then((snapshot) => {
+    //     console.log(snapshot);
+    //   })
   }
 
   handleIncreaseQuantity = (product) => {
